@@ -254,6 +254,7 @@ func reflectStruct(target interface{}, data string) {
 		fieldValue := splitData[1]
 		structField := values.FieldByName(fieldName)
 		if structField.Kind() == reflect.Invalid {
+			continue
 		} else {
 			setValue(structField, fieldValue)
 		}
