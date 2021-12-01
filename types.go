@@ -437,6 +437,7 @@ type BluetoothDevice struct {
 	Hotplug       string `json:"hotplug"`
 	Vendor        string `json:"vendor"`
 	Device        string `json:"device"`
+	Driver        string `json:"driver"`
 	Revision      string `json:"revision"`
 	SerialID      string `json:"serialId"`
 	Speed         string `json:"speed"`
